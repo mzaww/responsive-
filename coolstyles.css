@@ -1,0 +1,73 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    /* Navigation bar styles */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-block {
+    width: 250px;
+    margin: 8px;
+    text-align: center;
+}
+
+.content-block img {
+    width: 100%; /* Ensure consistent image width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+p {
+    margin: 8px;
+}
+
+.learn-more {
+    /* Styles for the "Learn More" link */
+}
+
+footer {
+    /* Footer styles */
+}
+
+/* Media Query for screens 800px or less */
+@media (max-width: 800px) {
+    .content-block {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        /* Styles for stacked paragraphs on the Home Page */
+    }
+}
+
+/* Media Query for screens 800px or more */
+@media (min-width: 800px) {
+    .container {
+        margin: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p {
+        /* Styles for side-by-side paragraphs on the Home Page */
+    }
+}
